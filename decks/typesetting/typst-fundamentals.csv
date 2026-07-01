@@ -1,0 +1,41 @@
+What is Typst?,A modern markup-based typesetting system designed as a faster and more programmable alternative to LaTeX.
+What file extension do Typst source files use?,".typ"
+How do you compile a Typst file from the command line?,"$typst\ compile\ file.typ$"
+How do you start a live preview/watch mode in Typst?,"$typst\ watch\ file.typ$"
+How do you create a heading in Typst?,Use one or more equals signs at the start of a line, e.g. "= Heading" for level 1.
+How do you create a level-2 heading?,Use two equals signs: "== Subheading"
+How do you make text bold in Typst?,"Wrap it in asterisks, e.g. *bold text*"
+How do you make text italic in Typst?,"Wrap it in underscores, e.g. _italic text_"
+How do you insert a line break in Typst?,Use a backslash "\" at the end of the line.
+How do you start a bullet list in Typst?,"Start each line with a hyphen, e.g. - item"
+How do you start a numbered list in Typst?,"Start each line with a plus sign, e.g. + item"
+How do you insert inline math in Typst?,"Wrap the expression in single dollar signs, e.g. $x^2$"
+How do you insert a block (display) math equation?,"Add extra spacing inside the dollar signs, e.g. $ x^2 + y^2 = z^2 $ on its own line."
+How do you write a fraction in Typst math mode?,"Use a forward slash, e.g. $a/b$, which typesets as a proper fraction."
+How do you write a square root in Typst?,"Use the sqrt function, e.g. $sqrt(x)$"
+How do you denote a function call in Typst code mode?,Prefix with a hash symbol, e.g. #function(args)
+How do you insert a comment in Typst?,"Use // for a line comment or /* */ for a block comment."
+How do you define a variable in Typst?,"Use #let, e.g. #let x = 5"
+How do you define a custom function in Typst?,"Use #let with parameters, e.g. #let greet(name) = [Hello, #name!]"
+How do you import another Typst file?,"Use #import, e.g. #import \"template.typ\": *"
+How do you include the raw content of another file?,"Use #include, e.g. #include \"chapter1.typ\""
+How do you set the page size in Typst?,"Use #set page(width: ..., height: ...)"
+How do you set page margins in Typst?,Use #set page(margin: ...)
+How do you change the document font in Typst?,Use #set text(font: "Font Name")
+How do you set the font size in Typst?,Use #set text(size: 12pt)
+How do you center content on a page in Typst?,Use #align(center)[content]
+How do you insert an image in Typst?,"Use #image(\"path/to/file.png\")"
+How do you create a table in Typst?,"Use #table(columns: n, ...) with cell contents as arguments."
+How do you add a figure with a caption in Typst?,"Use #figure(image(\"file.png\"), caption: [Caption text])"
+How do you create a footnote in Typst?,"Use #footnote[Footnote text]"
+How do you reference a labeled element in Typst?,"Label it with <name> and reference it using @name"
+How do you add a bibliography in Typst?,"Use #bibliography(\"refs.bib\")"
+How do you cite a source in Typst?,"Use @key where key matches an entry in the bibliography file."
+How do you create a code block with syntax highlighting in Typst?,"Use triple backticks with a language tag, e.g. ```python ... ```"
+How do you loop over a range of numbers in Typst?,"Use #for i in range(n) [ ... ]"
+How do you write a conditional in Typst?,"Use #if condition [ ... ] else [ ... ]"
+What is a "show rule" in Typst?,"A rule that transforms how an element is displayed, e.g. #show heading: it => [styled version]"
+What is a "set rule" in Typst?,"A rule that changes default styling properties for a type of element, e.g. #set text(fill: blue)"
+How do you insert a page break in Typst?,Use #pagebreak()
+How do you create a two-column layout in Typst?,Use #set page(columns: 2) or the #columns function.
+How do you define a template/style file that can be reused across documents in Typst?,Write a Typst file exposing a function (often named conf or template) that wraps content and applies set/show rules, then #import and call it in other files.
