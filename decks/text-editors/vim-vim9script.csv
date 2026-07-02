@@ -1,0 +1,65 @@
+What is the primary performance goal of Vim9 script compared to legacy Vim script?,Vim9 script aims to increase execution speed by 10 to 100 times through command compilation.
+Which command must be the first statement in a file to enable Vim9 script syntax?,The vim9script command.
+How are comments started in Vim9 script to distinguish them from strings?,Comments start with the hash (#) character.
+Which keyword is used to declare a mutable local variable in Vim9 script?,The var keyword.
+"In Vim9 script, which keyword creates a constant where only the variable name is immutable but the value can change?",The final keyword.
+Which keyword defines a constant where both the variable name and the value are immutable?,The const keyword.
+"By default, what is the scope of functions and variables defined at the script level in Vim9 script?",They are script-local by default.
+Which command is used to define a compiled function in Vim9 script?,The def command.
+What is the standard character for string concatenation in Vim9 script?,The double dot (..) operator.
+How does indexing a string in Vim9 script differ from legacy script?,Vim9 script uses character indexes instead of byte indexes.
+Which keyword is used to make a script-local item available for use in other scripts?,The export keyword.
+Which command allows a script to use items exported from another Vim9 script?,The import command.
+What syntax is used in Vim9 script to define a lambda function?,"The => arrow syntax, similar to JavaScript."
+How is a global variable explicitly accessed in Vim9 script?,By using the g: prefix.
+"In Vim9 script, what happens when a variable is declared without an explicit type or initialiser?","It defaults to a type of any and is initialised to zero, false, or empty."
+What is the result of evaluating an empty list or dictionary in a Vim9 script condition?,The condition is evaluated as falsy.
+Which operator is used in Vim9 script to provide a default value when an expression is falsy?,The falsy operator (??).
+How do you cast an expression to a specific type at compile time in Vim9 script?,"By placing the type name in angle brackets before the expression, such as <number>myVar."
+What is the purpose of the import autoload command in plugin development?,It delays the loading of a script until one of its exported items is actually invoked.
+Which command is used to define a new class in Vim9 script?,The class keyword.
+"In a Vim9 class, what is the required prefix for referring to object members within the class definition?",The this. prefix.
+What is the standard name for a constructor method in a Vim9 class?,The new() method.
+Which keyword makes a class member accessible from outside the class definition?,The public keyword.
+How are protected members designated in a Vim9 class or interface?,By prefixing the member name with an underscore (_).
+Which keyword is used to declare class-level variables or methods that do not require an object instance?,The static keyword.
+How many other classes can a single Vim9 class extend using inheritance?,A class can extend exactly one other class.
+Which keyword allows a class to promise it will provide the methods specified in a separate interface?,The implements keyword.
+"In inheritance, which keyword is used by a child class to call a method of its parent class?",The super. prefix.
+What is the primary restriction on defining interfaces regarding method bodies?,Interfaces can only declare method signatures without bodies or the enddef keyword.
+Which keyword defines an alias for a complex type specification to improve readability?,The type keyword.
+"In Vim9 script, what is the standard naming convention for class and type alias names?",They must be CamelCased and start with an uppercase letter.
+"How does Vim9 script handle numbers that start with a leading zero, such as 0123?",They are treated as decimal numbers unless they start with 0o for octal.
+What is the effect of reloading a Vim9 script file that does not use the noclear argument?,Vim deletes all existing script-local functions and variables before reloading.
+Which command modifier allows the execution of a legacy Vim script command within a Vim9 script?,The legacy command modifier.
+"In a Vim9 class, what is the default accessibility of an object variable if public is not specified?",It is read-only from outside the class but can be written from inside.
+Which tool or command is used to see the instructions generated for a compiled Vim9 function?,The disassemble command.
+"In Vim9 script, what is the requirement for white space around assignment operators like '='?",White space is strictly required both before and after the operator.
+How do Vim9 dictionary literals differ from legacy Vim literal dictionaries (#{})?,Vim9 dictionaries use curly braces ({}) with literal keys by default.
+"In Vim9 script, what must precede a range used before an Ex command, such as %s/old/new/?",The range must be prefixed with a colon (:).
+Which command should be used instead of :lockvar for local variables in Vim9 script?,The const or final keywords.
+"In Vim9 script, how are variable-length arguments defined in a function signature?","By using an ellipsis before the name, such as ...items: list<any>."
+What happens if a Vim9 function tries to access the legacy a: or l: scope dictionaries?,These dictionaries are unavailable in Vim9 functions to reduce overhead.
+Which specific value is used to signify that a function should use its default value for an optional argument?,The v:none value.
+What is the main limitation of an abstract class in Vim9?,It cannot be used to create an object instance directly.
+Which keyword indicates that an interface is inheriting properties from another interface?,The extends keyword.
+"In Vim9 script classes, which prefix is used to make a method only accessible within the class and its subclasses?",An underscore (_) prefix.
+What is the purpose of the specifies keyword in a Vim9 class declaration?,It declares that a class defines a specific named interface.
+How can you create a list with a specific item type to ensure strict type checking in Vim9 script?,"By using angle brackets, such as var myList: list<string>."
+Which function should be used instead of map() if you need to change the item types of a declared list?,The mapnew() function.
+"In Vim9 script, what character replaces '#' for identifying the alternate file name?",The double percent (%%) sequence.
+What is the requirement for a colon when using the '->' operator for a method call at the start of a line?,A colon is required to distinguish it from a range or legacy shift command.
+Which keyword must be used to define a class that serves only as a base and cannot be instantiated?,The abstract keyword before class.
+How are script-local variables in legacy scripts accessed within a Vim9 compiled function?,They must be accessed using the s: prefix if they are not defined at compile time.
+What is the effect of using 'is' or 'isnot' on two strings in Vim9 script?,They check identity and currently return false as strings are copied.
+What is the maximum number of nested loops (for and while) allowed in Vim9 script?,The depth cannot exceed 10.
+"In a Vim9 class, can a child class override an object variable from its parent class?","No, object variables cannot be overridden in child classes."
+Which Vim9 script command manually triggers the compilation of all functions in the current script?,The defcompile command.
+What does the 'trim' argument do in a Vim9 heredoc assignment?,It removes leading indentation from the lines in the heredoc.
+Which special mapping key allows a command to use the script context where the mapping was defined?,The <ScriptCmd> key.
+"In Vim9 script, which command is used to repeat a search backward?",The question mark (?) followed by the search text.
+What error occurs if a Vim9 function is called before it is defined and compilation is attempted?,The compilation fails with an error that the function is not found.
+How can you bypass compile-time checks for a user command that is defined after a function in Vim9?,By invoking the command indirectly using the execute command.
+"In Vim9 classes, what happens if an object variable is declared with the 'const' keyword?",The variable and its value become immutable after initialisation in the constructor.
+What is the purpose of the 'as' keyword in an import statement?,It allows the imported script's items to be accessed through a custom local namespace name.
+"In Vim9, what is the default type assigned to a variable initialised with an empty dictionary ({}) if no type is provided?",The type is inferred as dict<any>.
