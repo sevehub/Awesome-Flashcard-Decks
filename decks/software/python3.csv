@@ -1,0 +1,60 @@
+What is a Python exception?,An error occurring during program execution that disrupts the normal flow of instructions.
+Exceptions in Python can be handled using _____ blocks to prevent program crashes.,try-except
+"In Python 3, the standard division symbol ($/$) performs _____ division, producing a floating point result.",true
+Which built-in function is used to accept user input in Python 3?,input()
+Concept: Indentation,Definition: The use of leading whitespace to define the grouping of statements and block structure.
+"In Python 3, the terms 'True', 'False', and 'None' are classified as _____, meaning they cannot be reassigned.",keywords
+What is the purpose of the 'with' statement when opening a file (Context Manager)?,It ensures the file is automatically closed when code execution leaves the block.
+Term: Docstring,"Definition: A string literal used for documenting a specific segment of code, such as a function or class."
+How can you programmatically access the docstring of an object?,By using the __doc__ attribute.
+What does the bitwise operator $^$ represent?,XOR (Exclusive OR)
+The _____ evaluation in boolean operators means evaluation stops as soon as the outcome is certain.,short-circuit
+How do the 'is' and '==' operators differ in Python?,"'is' checks for identity (same object), while '==' checks for equality (same value)."
+Which keyword allows a function to access and modify a variable defined in the local scope of an enclosing function?,nonlocal
+Which keyword is used to declare that a variable within a function refers to a variable at the module level?,global
+"In a Python loop, which statement is used to skip the rest of the current block and move to the next iteration?",continue
+The _____ statement in a loop is used to exit the loop prematurely.,break
+What is the purpose of the 'pass' statement in Python?,It acts as a null operation or placeholder where a statement is syntactically required.
+When does the 'else' clause attached to a 'for' or 'while' loop execute?,When the loop completes naturally without being interrupted by a 'break' statement.
+Which method is used to add a single value to the end of a Python array?,append()
+"To add multiple items from an iterable into an existing array, use the _____ method.",extend()
+The _____ method is used to remove and return an array element at a specific index.,pop()
+"In list slicing, what does the third argument (the 'step') determine?",The increment between each index selected from the list.
+What is the slicing syntax to create a reversed copy of a list 'L'?,L[::-1]
+Which special variable is used to determine if a Python script is being run as the main program or imported as a module?,__name__
+"To prevent code from running when a module is imported, you should wrap it in an 'if' block checking if _____.",__name__ == '__main__'
+What is the function of 'pip freeze'?,"It outputs a list of installed packages and their versions, often used to create requirements.txt files."
+"In an interactive Python shell, what does the underscore symbol ($\_$) represent?",The value of the last result from the last successful expression.
+"In Python 3, what specific method must an iterator class implement to retrieve the next value?",__next__
+"In Python 3, the 'exec' command is a _____ rather than a statement.",function
+How do dictionary methods like .keys() and .values() behave in Python 3 compared to Python 2?,They return dynamic view objects instead of static lists.
+Why will 'for key in d.keys(): del d[key]' cause a RuntimeError in Python 3?,A dictionary's size cannot be changed while iterating over its view objects.
+Which tool is provided to help automatically convert Python 2.x source code into Python 3.x code?,2to3
+"What is the danger of creating a nested list using multiplication, such as [[]] * 3?","It creates three references to the exact same list object, rather than three independent lists."
+"In Python 3, all classes are 'new-style', meaning they implicitly inherit from _____.",object
+Why is it recommended to initialise instance attributes inside the __init__ method rather than at the class level?,"Attributes defined outside __init__ are shared class (static) attributes, which can lead to unexpected shared state."
+What type of object does the range() function return in Python 3?,"An immutable sequence object (range object), not a list."
+Formula: $x \** y$,Purpose: Calculates $x$ raised to the power of $y$.
+What character is used to indicate the start of a comment in Python?,#
+"The 'del' statement removes a _____ to an object, not necessarily the object itself.",name (or reference)
+Which operator is used to calculate the remainder of a division?,% (Modulus)
+Concept: Frozenset,Definition: An immutable version of a Python set that cannot be modified after creation.
+"In Python 3, integer division that rounds down to the nearest integer is performed using the _____ operator.",// (Floor division)
+What is the purpose of the 'help()' utility in Python?,"To access the built-in interactive help system for modules, keywords, and symbols."
+Which module is recommended for programmatically importing other modules in Python 3?,importlib
+How can you ensure that a list is truly copied rather than just referenced when passing it to a function?,"By using the list() constructor or slicing (e.g., L[:])."
+What is the primary benefit of using 'venv' virtual environments?,They allow the isolation of Python versions and package dependencies for different projects.
+List the three components of a conditional expression (ternary operator) in order.,[on_true] if [expression] else [on_false]
+"Which boolean operator has the highest precedence: 'and', 'or', or 'not'?",not
+The process of repeating a block of code for every item in a collection is known as _____.,iteration
+"In Python, strings are _____, meaning their content cannot be changed after they are created.",immutable
+Which method returns the number of occurrences of a specific element in an array?,count()
+The _____ method is used to find the first index of a specific value within an array.,index()
+How do you define a block of code in Python?,By using consistent levels of indentation.
+"In a Python interactive shell, the prompt represented by '>>>' is called the _____ prompt.",primary
+Which numeric type in Python is used to represent real numbers with a fractional component?,float
+A collection of unique elements that is unordered and unindexed is a _____.,set
+"In Python 3, how can you signal that one exception was caused by another (exception chaining)?",Using the 'raise ... from ...' syntax.
+What happens to the value of $\_$ in the shell if an expression raises an exception?,The value of $\_$ remains unchanged.
+"To get a list of all names in the current local scope, which built-in function is used?",dir()
+Concept: List Comprehension,"Definition: A concise way to create lists, where the variables no longer leak into the surrounding scope in Python 3."
