@@ -6,7 +6,7 @@ How do you create a heading in Typst?,"Use one or more equals signs at the start
 How do you create a level-2 heading?, "Use two equals signs: ""== Subheading"""
 How do you make text bold in Typst?,"Wrap it in asterisks, e.g. *bold text*"
 How do you make text italic in Typst?,"Wrap it in underscores, e.g. _italic text_"
-How do you insert a line break in Typst?,Use a backslash "\" at the end of the line.
+How do you insert a line break in Typst?,Use a backslash ""\\"" at the end of the line.
 How do you start a bullet list in Typst?,"Start each line with a hyphen, e.g. - item"
 How do you start a numbered list in Typst?,"Start each line with a plus sign, e.g. + item"
 How do you insert inline math in Typst?,"Wrap the expression in single dollar signs, e.g. $x^2$"
