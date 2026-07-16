@@ -6,7 +6,7 @@ How do you create a heading in Typst?,"Use one or more equals signs at the start
 How do you create a level-2 heading?, "Use two equals signs: ""== Subheading"""
 How do you make text bold in Typst?,"Wrap it in asterisks, e.g. *bold text*"
 How do you make text italic in Typst?,"Wrap it in underscores, e.g. _italic text_"
-How do you insert a line break in Typst?,Use a backslash $\textbackslash$ at the end of the line.
+How do you insert a line break in Typst?,"Use a backslash $\textbackslash$ at the end of the line."
 How do you start a bullet list in Typst?,"Start each line with a hyphen, e.g. - item"
 How do you start a numbered list in Typst?,"Start each line with a plus sign, e.g. + item"
 How do you insert inline math in Typst?,"Wrap the expression in single dollar signs, e.g. $x^2$"
@@ -18,7 +18,7 @@ How do you insert a comment in Typst?,"Use // for a line comment or /* */ for a 
 How do you define a variable in Typst?,"Use #let, e.g. #let x = 5"
 How do you define a custom function in Typst?,"Use #let with parameters, e.g. #let greet(name) = [Hello, #name!]"
 How do you import another Typst file?,"Use #import, e.g. #import ""template.typ"": *"
-How do you include the raw content of another file?,"Use #include, e.g. #include ""chapter1.typ""
+How do you include the raw content of another file?,"Use #include, e.g. #include ""chapter1.typ"""
 How do you set the page size in Typst?,"Use #set page(width: ..., height: ...)"
 How do you set page margins in Typst?,Use #set page(margin: ...)
 How do you change the document font in Typst?,Use #set text(font: "Font Name")
