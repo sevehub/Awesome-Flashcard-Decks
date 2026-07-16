@@ -6,7 +6,7 @@ How do you create a heading in Typst?,"Use one or more equals signs at the start
 How do you create a level-2 heading?, "Use two equals signs: ""== Subheading"""
 How do you make text bold in Typst?,"Wrap it in asterisks, e.g. *bold text*"
 How do you make text italic in Typst?,"Wrap it in underscores, e.g. _italic text_"
-How do you insert a line break in Typst?,"Use a backslash $\textbackslash$ at the end of the line."
+How do you insert a line break in Typst?,"Use a backslash $\backslash$ at the end of the line."
 How do you start a bullet list in Typst?,"Start each line with a hyphen, e.g. - item"
 How do you start a numbered list in Typst?,"Start each line with a plus sign, e.g. + item"
 How do you insert inline math in Typst?,"Wrap the expression in single dollar signs, e.g. $x^2$"
@@ -21,10 +21,10 @@ How do you import another Typst file?,"Use #import, e.g. #import ""template.typ"
 How do you include the raw content of another file?,"Use #include, e.g. #include ""chapter1.typ"""
 How do you set the page size in Typst?,"Use #set page(width: ..., height: ...)"
 How do you set page margins in Typst?,Use #set page(margin: ...)
-How do you change the document font in Typst?,Use #set text(font: "Font Name")
+How do you change the document font in Typst?,"Use #set text(font: ""Font Name"")"
 How do you set the font size in Typst?,Use #set text(size: 12pt)
 How do you center content on a page in Typst?,Use #align(center)[content]
-How do you insert an image in Typst?,"Use #image(\"path/to/file.png\")"
+How do you insert an image in Typst?,"Use #image(""path/to/file.png"")"
 How do you create a table in Typst?,"Use #table(columns: n, ...) with cell contents as arguments."
 How do you add a figure with a caption in Typst?,"Use #figure(image(""file.png""), caption: [Caption text])"
 How do you create a footnote in Typst?,"Use #footnote[Footnote text]"
@@ -39,3 +39,4 @@ What is a "set rule" in Typst?,"A rule that changes default styling properties f
 How do you insert a page break in Typst?,Use #pagebreak()
 How do you create a two-column layout in Typst?,Use #set page(columns: 2) or the #columns function.
 How do you define a template/style file that can be reused across documents in Typst?,Write a Typst file exposing a function (often named conf or template) that wraps content and applies set/show rules, then #import and call it in other files.
+What is the .. operator in Typst?,It is the spread operator used to expand arrays, dictionaries, and arguments.
