@@ -34,8 +34,8 @@ How do you cite a source in Typst?,"Use @key where key matches an entry in the b
 How do you create a code block with syntax highlighting in Typst?,"Use triple backticks with a language tag, e.g. ```python ... ```"
 How do you loop over a range of numbers in Typst?,"Use #for i in range(n) [ ... ]"
 How do you write a conditional in Typst?,"Use #if condition [ ... ] else [ ... ]"
-What is a ""show rule"" in Typst?,"A rule that transforms how an element is displayed, e.g. #show heading: it => [styled version]"
-What is a ""set rule"" in Typst?,"A rule that changes default styling properties for a type of element, e.g. #set text(fill: blue)"
+"What is a $\textit{show rule}$ in Typst?","A rule that transforms how an element is displayed, e.g. #show heading: it => [styled version]"
+"What is a $\textit{set rule}$ in Typst?","A rule that changes default styling properties for a type of element, e.g. #set text(fill: blue)"
 How do you insert a page break in Typst?,Use #pagebreak()
 How do you create a two-column layout in Typst?,Use #set page(columns: 2) or the #columns function.
 How do you define a template/style file that can be reused across documents in Typst?,Write a Typst file exposing a function (often named conf or template) that wraps content and applies set/show rules, then #import and call it in other files.
