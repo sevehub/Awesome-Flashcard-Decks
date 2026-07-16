@@ -13,7 +13,7 @@ How do you insert inline math in Typst?,"Wrap the expression in single dollar si
 How do you insert a block (display) math equation?,"Add extra spacing inside the dollar signs, e.g. $ x^2 + y^2 = z^2 $ on its own line."
 How do you write a fraction in Typst math mode?,"Use a forward slash, e.g. $a/b$, which typesets as a proper fraction."
 How do you write a square root in Typst?,"Use the sqrt function, e.g. $sqrt(x)$"
-How do you denote a function call in Typst code mode?,Prefix with a hash symbol, e.g. #function(args)
+How do you denote a function call in Typst code mode?,"Prefix with a hash symbol, e.g. #function(args)"
 How do you insert a comment in Typst?,"Use // for a line comment or /* */ for a block comment."
 How do you define a variable in Typst?,"Use #let, e.g. #let x = 5"
 How do you define a custom function in Typst?,"Use #let with parameters, e.g. #let greet(name) = [Hello, #name!]"
