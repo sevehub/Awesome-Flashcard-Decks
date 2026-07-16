@@ -3,7 +3,7 @@ What file extension do Typst source files use?,".typ"
 How do you compile a Typst file from the command line?,"$typst\ compile\ file.typ$"
 How do you start a live preview/watch mode in Typst?,"$typst\ watch\ file.typ$"
 How do you create a heading in Typst?,"Use one or more equals signs at the start of a line, e.g. ""= Heading"" for level 1."
-How do you create a level-2 heading?,Use two equals signs: ""== Subheading""
+How do you create a level-2 heading?, "Use two equals signs: ""== Subheading"""
 How do you make text bold in Typst?,"Wrap it in asterisks, e.g. *bold text*"
 How do you make text italic in Typst?,"Wrap it in underscores, e.g. _italic text_"
 How do you insert a line break in Typst?,Use a backslash "\" at the end of the line.
