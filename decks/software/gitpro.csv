@@ -1,0 +1,45 @@
+What is the primary purpose of a Version Control System (VCS)?,To record changes to files over time so specific versions can be recalled later.
+Which specific local VCS tool works by keeping patch sets in a special format on disk?,RCS
+How does a Centralized Version Control System (CVCS) handle file storage?,A single server contains all versioned files and clients check out files from that central place.
+What are two examples of Centralized Version Control Systems (CVCS) mentioned in the text?,Subversion and Perforce.
+What is the main risk associated with the single point of failure in a CVCS?,"If the central database is corrupted without backups, the entire history of the project is lost."
+How does a Distributed Version Control System (DVCS) differ from a CVCS regarding repository access?,"Clients fully mirror the repository, including its full history, rather than just checking out the latest snapshot."
+What allows a DVCS to restore a dead server using a client repository?,Every client clone is a full backup of all the repository data.
+In what year was Git developed?,2005
+Who was the primary creator of Git?,Linus Torvalds
+What event prompted the Linux development community to create Git?,The breakdown of the relationship with BitKeeper and the revocation of its free-of-charge status.
+Which Git design goal focuses on the ability to handle thousands of parallel branches?,Strong support for non-linear development.
+Concept: Delta-based version control,Definition: Systems that store information as a base version of each file plus a list of file-based changes over time.
+How does Git's conceptual data model differ from delta-based systems?,Git thinks of its data as a series of snapshots of a miniature filesystem.
+How does Git handle files that have not changed between commits to save space?,It stores a link to the previous identical file it has already stored rather than storing the file again.
+Why are most Git operations nearly instantaneous compared to CVCS operations?,Most operations use only local files and resources from the local database on disk.
+What mechanism does Git use to ensure data integrity and detect file corruption?,SHA-1 hash checksumming.
+A SHA-1 hash in Git is a character string of what length?,40 characters
+What character set is used to compose a SHA-1 hash string?,"Hexadecimal characters ($0-9$ and $a-f$)".
+Git refers to objects in its database primarily by their _____ rather than by file name.,Hash value
+"In Git, the state where a file has been changed but not yet committed is called _____.",Modified
+"In Git, the state where a modified file is marked in its current version for the next commit is called _____.",Staged
+"In Git, the state where data is safely stored in the local database is called _____.",Committed
+Which Git section contains a single checkout of one version of the project for the user to modify?,The working tree
+What is the technical name for the staging area in Git?,The index
+Which Git section stores the metadata and object database and is copied during a clone?,The Git directory
+Term: Git clone,Definition: The process of copying a full version of nearly all data the server has to a local machine.
+Which command is used to install Git on a Fedora-based Linux system?, $\sh{sudo dnf install git-all}$
+What tool allows users to set configuration variables that control Git's look and operation?,git config
+Which configuration file applies settings to every user on the system?,[path]/etc/gitconfig
+Which flag is used with $\sh{git config}$ to write settings to the system-wide configuration file?,--system
+Where is the user-specific global configuration file located on most systems?,~/.gitconfig (or ~/.config/git/config)
+Which configuration file level takes the highest priority and overrides all others?,The local config file in the .git directory of the specific repository.
+What command sets the global user name for Git commits?,"\sh{git config --global user.name [Name]$}"
+What command sets the global email address for Git commits?,$\sh{git config --global user.email [email@example.com]}$
+Which configuration key allows you to change the default initial branch name from 'master'?,init.defaultBranch
+What command displays all settings Git finds along with the files they originated from?,$\sh{git config --list --show-origin}$
+"How can you get a concise ""help"" summary of options for the $\sh{git add}$ command?",$\sh{git add -h}$
+What does the command $\sh{git init}$ do in an existing project directory?,It creates a .git subdirectory containing the necessary repository skeleton files.
+"In Git, what is the difference between ""tracked"" and ""untracked"" files?",Tracked files were in the last snapshot or are staged; untracked files are everything else in the working directory.
+Which command is the primary tool for determining which files are in which state?,git status
+"What is the result of running $\sh{git add [file]}$ on a new, untracked file?",The file becomes tracked and is staged to be committed.
+How does $git add$ behave when a directory path is provided as an argument?,It adds all files in that directory recursively.
+"If you modify a file after running $git add$ but before committing, what must you do to include the latest changes?",Run $git add$ again to stage the latest version of the file.
+Which transfer protocol uses the format $\sh{user@server:path/to/repo.git}$?,SSH
+"Under what condition will $git status$ report ""nothing to commit, working tree clean""?",When none of the tracked files are modified and there are no untracked files.
