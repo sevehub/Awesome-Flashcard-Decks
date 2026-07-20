@@ -15,7 +15,7 @@ How does Git handle files that have not changed between commits to save space?,I
 Why are most Git operations nearly instantaneous compared to CVCS operations?,Most operations use only local files and resources from the local database on disk.
 What mechanism does Git use to ensure data integrity and detect file corruption?,SHA-1 hash checksumming.
 A SHA-1 hash in Git is a character string of what length?,40 characters
-What character set is used to compose a SHA-1 hash string?,"Hexadecimal characters ($0-9$ and $a-f$)".
+What character set is used to compose a SHA-1 hash string?,"Hexadecimal characters ($\textit{0-9}$ and $\textit{a-f}$)".
 Git refers to objects in its database primarily by their _____ rather than by file name.,Hash value
 "In Git, the state where a file has been changed but not yet committed is called _____.",Modified
 "In Git, the state where a modified file is marked in its current version for the next commit is called _____.",Staged
